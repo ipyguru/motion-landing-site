@@ -1,0 +1,1 @@
+self.__RSC_CSS_MANIFEST={"__entry_css__":{"/Users/vbuoc/Dev/motion-landing-site/app/page":["/Users/vbuoc/Dev/motion-landing-site/styles/globals.css"]},"/Users/vbuoc/Dev/motion-landing-site/app/layout.js":["/Users/vbuoc/Dev/motion-landing-site/styles/globals.css"]}

@@ -1,9 +1,37 @@
-'use client';
+"use client";
+
+import { motion } from "framer-motion";
+import styles from "../styles";
+import { navVariants } from "../utils/motion";
+import { PhoneCard, Button } from "../components";
+
+import { MdOutgoingMail } from "react-icons/md";
 
 const Navbar = () => (
-  <nav>
-    navbar
-  </nav>
+  <motion.nav
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+    className={`${styles.xPaddings} py-8 relative`}
+  >
+    <div className="absolute w-[50%] inset-0 gradient-01" />
+    <div
+      className={`${styles.innerWidth} flex mx-auto justify-between gap-0 sm:gap-8 items-center`}
+    >
+      <PhoneCard divStyles="text-white font-extrabold sm-text-[20px] text-[14px] xl:leading-[30px]" />
+      <h2 className="hidden md:block text-white font-extrabold sm:text-[20px] text-[14px] xl:leading-[30px]">
+        ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА
+      </h2>
+
+      <Button
+        type="link"
+        divClass={`${styles.btnSecondary} sm:text-[16px] text-[12px]`}
+        title="ВЫЗОВ АГЕНТА"
+        href="#feedback"
+        icon={<MdOutgoingMail style={{ width: "24px", height: "auto" }} />}
+      />
+    </div>
+  </motion.nav>
 );
 
 export default Navbar;

@@ -9,6 +9,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        main: ['Roboto'],
+      },
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
