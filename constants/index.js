@@ -15,7 +15,7 @@ export const about = {
       районов-
       <span className="font-extrabold">бесплатный</span>. При своевременном
       обращении в нашу ритуальную фирму вы получите высочайшего уровня
-      ритуальные услуги.`,
+      ритуальные услуги.`  
 };
 
 export const exploreWorlds = [
@@ -80,7 +80,11 @@ export const contacts = {
   subtitle: "",
   address: "г. Саратов, ул. Белоглинская, д. 1",
   phone: "+7 (8452) 35-45-67",
-  email: "sargps@yandex.ru",
+  email: "gpssar@yandex.ru",
+  companyName: "ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА",
+  domainName: "https://sargps.ru",
+  officialName: "ИП «ЧЕРНЯЕВ ДМИТРИЙ ВЛАДИМИРОВИЧ»",
+  ogrn: "321645100047592",
 };
 
 export const insights = {

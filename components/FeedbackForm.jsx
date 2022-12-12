@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input/react-hook-form-input";
 import {
@@ -9,15 +10,28 @@ import {
   BsFillFileEarmarkMedicalFill,
 } from "react-icons/bs";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import styles from "../styles";
+import Link from "next/link";
 
 export const FeedbackForm = () => {
-  const { register, control, handleSubmit, errors } = useForm();
+  const { register, control, handleSubmit, errors, reset } = useForm();
   const [phoneValue, setPhoneValue] = useState();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    console.log(errors);
+  const onSubmit = async (formData) => {
+    try {
+      const response = await axios.post("/api/feedback", formData);
+      if (response.status === 200) {
+        reset();
+        toast.success("Заявка принята! Мы свяжемся с Вами в ближайшее время!", {
+          position: toast.POSITION.TOP_CENTER,
+          theme: "dark",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -139,12 +153,30 @@ export const FeedbackForm = () => {
         </div>
       </div>
 
+      {/* privacy */}
+      <div className="flex items-start gap-3">
+        <input
+          id="privacy"
+          type="checkbox"
+          name="privacy"
+          {...register("privacy", { required: true })}
+          className="w-4 h-4 mt-[2px]"
+        />
+        <span className="block text-secondary-white">
+          * Отправляя форму, я даю согласие на{" "}
+          <Link href="/privacy" className="text-primary-blue underline">
+            обработку персональных данных.
+          </Link>
+        </span>
+      </div>
+
       <button
         type="submit"
         className={`${styles.btnPrimary} max-w-[120px] font-normal text-[16px] text-white`}
       >
         Отправить
       </button>
+      <ToastContainer />
     </form>
   );
 };
