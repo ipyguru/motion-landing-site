@@ -6,11 +6,13 @@ import WhatsNew from './WhatsNew';
 import Contact from './Contact';
 import Insights from './Insights';
 import Feedback from './Feedback';
+import Reviews from './Reviews';
 
 export {
   Hero,
   About,
   Explore,
+  Reviews,
   GetStarted,
   WhatsNew,
   Contact,

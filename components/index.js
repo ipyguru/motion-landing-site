@@ -9,9 +9,11 @@ import Footer from "./Footer";
 import { PhoneCard } from "./PhoneCard";
 import { EmailCard } from "./EmailCard";
 import Button from "./Button";
-import {FeedbackForm} from "./FeedbackForm";
+import { FeedbackForm } from "./FeedbackForm";
+import ReviewCard from "./ReviewCard";
 
 export {
+  ReviewCard,
   FeedbackForm,
   Button,
   PhoneCard,

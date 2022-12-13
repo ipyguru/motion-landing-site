@@ -1,5 +1,3 @@
-import "../styles/globals.css";
-
 import Link from "next/link";
 
 import { Footer, Navbar } from "../components";
