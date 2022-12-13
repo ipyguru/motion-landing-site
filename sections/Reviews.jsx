@@ -15,9 +15,12 @@ const Reviews = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col gap-6`}
+        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
       >
-        <TypingText title={review.title} textStyles="text-center text-[24px]" />
+        <TypingText
+          title={review.title}
+          textStyles={`text-center text-[24px]`}
+        />
         <div className="mt-[50px] flex flex-col gap-5">
           {review.items.map((item, index) => (
             <ReviewCard key={`review#${index}`} {...item} index={index + 1} />
