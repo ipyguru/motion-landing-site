@@ -2,7 +2,7 @@
 .DS_Store
 
 # Build
-.out
+out
 
 # Env
 .env
@@ -10,6 +10,13 @@
 .env.development.local
 .env.test.local
 .env.production.local
+
+# SECRETS
+*.key
+.key.local
+.key.development.local
+.key.test.local
+.key.production.local
 
 # Logs
 logs
