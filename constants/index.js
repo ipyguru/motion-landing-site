@@ -92,6 +92,10 @@ export const contacts = {
     width: "100%",
     height: "544",
   },
+  developer: {
+    name: "Владимир",
+    link: "vbuoc@yandex.ru",
+  },
 };
 
 export const insights = {

@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
-import { PhoneCard, Button } from "../components";
-
-import { MdOutgoingMail } from "react-icons/md";
+import { PhoneCard } from "../components";
+import { MdBolt } from "react-icons/md";
 
 const Navbar = () => (
   <motion.nav
@@ -14,22 +15,23 @@ const Navbar = () => (
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
   >
-    <div className={`${styles.innerWidth, styles.flexBetween} gap-0 sm:gap-8`}>
-      <PhoneCard divStyles="text-white font-extrabold sm-text-[20px] text-[14px] xl:leading-[30px]" />
-      <h2 className="hidden md:block text-white font-extrabold sm:text-[20px] text-[14px] xl:leading-[30px]">
-        ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА
-      </h2>
+    <div
+      className={`${(styles.innerWidth, styles.flexBetween)} gap-0 sm:gap-8`}
+    >
+      <PhoneCard divStyles="text-white z-10" />
+      <div className={`hidden xl:flex justify-center items-center gap-1`}>
+        <MdBolt className="text-white" />
+        <h2 className={`${styles.fontSmall} text-white`}>
+          "Социальные похороны" (программы похорон за 22000 рублей)
+        </h2>
+      </div>
 
-      <Button
-        type="link"
-        divClass={`${styles.btnSecondary} sm:text-[16px] text-[12px]`}
-        title="ВЫЗОВ АГЕНТА"
-        href="#feedback"
-        icon={<MdOutgoingMail style={{ width: "24px", height: "auto" }} />}
-      />
+      <Link href="#feedback" className={`${styles.btnSecondary}`}>
+        <p className={`${styles.fontSmall}`}>ВЫЗОВ АГЕНТА</p>
+      </Link>
     </div>
 
-    <div className="absolute w-[50%] inset-0 gradient-01" />
+    <div className="absolute w-[30%] inset-4 gradient-01" />
   </motion.nav>
 );
 

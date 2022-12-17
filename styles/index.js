@@ -18,6 +18,7 @@ const styles = {
   fontTitle: "text-white uppercase font-normal sm:text-[26px] text-[18px] antialiased hover:subpixel-antialiased",
   fontNormal: "text-secondary-white font-normal text-[16px] sm:text-[18px] antialiased hover:subpixel-antialiased",
   fontBold: "text-secondary-white font-bold text-[16px] sm:text-[18px] antialiased hover:subpixel-antialiased",
+  fontSmall: "text-secondary-white font-normal text-[14px] sm:text-[16px] antialiased hover:subpixel-antialiased",
   // Cards
   card: "bg-slate-700 text-white rounded-[20px] p-6 hover:shadow-lg shadow-inherit shadow-sm cursor-pointer",
   fontCardTitle: "text-white uppercase font-normal text-[16px] sm:text[18px] antialiased hover:subpixel-antialiased",

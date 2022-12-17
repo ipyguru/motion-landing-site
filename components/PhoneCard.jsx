@@ -5,8 +5,8 @@ import styles from "../styles";
 import { contacts } from "../constants";
 
 export const PhoneCard = ({divStyles}) => (
-  <div className={`${divStyles} flex items-center z10 gap-3`}>
-    <HiPhone />
+  <div className={`${divStyles} ${styles.flexCenter} ${styles.fontNormal} gap-3`}>
+    <HiPhone className="text-white"/>
     <a href={`tel:+${contacts.phone.replace(/[^0-9]/g, "")}`} type="phone">
       {contacts.phone}
     </a>
