@@ -160,7 +160,7 @@ export const FeedbackForm = () => {
           type="checkbox"
           name="privacy"
           {...register("privacy", { required: true })}
-          className="w-4 h-4 mt-[2px]"
+          className="mt-[2px] min-w-[14px] min-h-max"
         />
         <span className="block text-secondary-white">
           * Отправляя форму, я даю согласие на{" "}

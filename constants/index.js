@@ -18,37 +18,42 @@ export const about = {
       ритуальные услуги.`,
 };
 
-export const exploreWorlds = [
-  {
-    id: "world-1",
-    imgUrl: "/services-rt-agent.jpg",
-    title: "ВЫЗОВ РИТУАЛЬНОГО АГЕНТА",
-  },
-  {
-    id: "world-2",
-    imgUrl: "/services-rt-2.jpg",
-    title: "ОРГАНИЗАЦИЯ ПОХОРОН",
-  },
-  {
-    id: "world-3",
-    imgUrl: "/services-rt-3.jpg",
-    title: "ПОМИНАЛЬНАЯ ТРАПЕЗА",
-  },
-  {
-    id: "world-4",
-    imgUrl: "/services-rt-4.jpg",
-    title: "РИТУЛЬНЫЙ ТРАНСПОРТ",
-  },
-  {
-    id: "world-5",
-    imgUrl: "/services-rt-5.jpg",
-    title: "ОФОРМЛЕНИЕ ДОКУМЕНТОВ",
-  },
-];
+export const exploreWorlds = {
+  title: "Что мы предлагаем?",
+  subtitle: `Все ритуальные услуги в одном месте, 
+    вот только некоторые из них. О полном списке наших услуг вы сможете 
+    прочесть в разделе "Услуги"`,
+  cards: [
+    {
+      id: "world-1",
+      imgUrl: "/services-rt-agent.jpg",
+      title: "ВЫЗОВ РИТУАЛЬНОГО АГЕНТА",
+    },
+    {
+      id: "world-2",
+      imgUrl: "/services-rt-2.jpg",
+      title: "ОРГАНИЗАЦИЯ ПОХОРОН",
+    },
+    {
+      id: "world-3",
+      imgUrl: "/services-rt-3.jpg",
+      title: "ПОМИНАЛЬНАЯ ТРАПЕЗА",
+    },
+    {
+      id: "world-4",
+      imgUrl: "/services-rt-4.jpg",
+      title: "РИТУЛЬНЫЙ ТРАНСПОРТ",
+    },
+    {
+      id: "world-5",
+      imgUrl: "/services-rt-5.jpg",
+      title: "ОФОРМЛЕНИЕ ДОКУМЕНТОВ",
+    },
+  ],
+};
 
 export const startingFeatures = {
   title: "Не знаете с чего начать?",
-  subtitle: "Просто свяжитесь с нами",
   steps: [
     "Позвоните нам по телефону, или оставьте заявку на сайте",
     "Мы свяжемся с вами, и обсудим все детали",
@@ -57,8 +62,7 @@ export const startingFeatures = {
 };
 
 export const newFeatures = {
-  title: "Новости",
-  subtitle: `Включены все услуги, никаких доплат в процессе похорон.`,
+  title: `Включены все услуги, никаких доплат в процессе похорон.`,
   news: [
     {
       imgUrl: "/vrpano.svg",
@@ -77,19 +81,21 @@ export const newFeatures = {
 
 export const contacts = {
   title: "Наши контакты:",
-  subtitle: "",
-  address: "г. Саратов, ул. Белоглинская, д. 1",
-  phone: "+7 (8452) 35-45-67",
+  address: "г. Саратов, ул. Астраханская, д. 103",
+  phone: "+7 (8452) 93-70-70",
   email: "gpssar@yandex.ru",
   companyName: "ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА",
   domainName: "https://sargps.ru",
   officialName: "ИП «ЧЕРНЯЕВ ДМИТРИЙ ВЛАДИМИРОВИЧ»",
   ogrn: "321645100047592",
+  map: {
+    width: "100%",
+    height: "544",
+  },
 };
 
 export const insights = {
-  title: "Услуги",
-  subtitle: `Подробнее о наших услугах`,
+  title: `Подробнее о наших услугах`,
   items: [
     {
       imgUrl: "/services-rt-2.jpg",

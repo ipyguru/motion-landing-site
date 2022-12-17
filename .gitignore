@@ -13,6 +13,7 @@ out
 
 # SECRETS
 *.key
+*.crt
 .key.local
 .key.development.local
 .key.test.local

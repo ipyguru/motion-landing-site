@@ -1,4 +1,5 @@
 import styles from "../styles";
+import { TitleText } from "./CustomTexts";
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
@@ -7,10 +8,10 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
     >
       <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
     </div>
-    <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
+    <h1 className={`${styles.fontBold} mt-[26px] text-white`}>
       {title}
     </h1>
-    <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+    <p className={`${styles.fontNormal} text-justify md:text-start flex-1 mt-[16px]`}>
       {subtitle}
     </p>
   </div>

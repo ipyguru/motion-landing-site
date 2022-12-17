@@ -5,30 +5,36 @@ import { motion } from "framer-motion";
 import StarRatings from "react-star-ratings";
 
 import { fadeIn } from "../utils/motion";
+import styles from "../styles";
 
 const ReviewCard = ({ name, rating, text, city, date, index }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.15, 1)}
-    className="inline-block w-full rounded-[20px] p-6 text-white bg-gray-700 hover:shadow-lg shadow-inherit shadow-sm cursor-pointer"
+    className={`${styles.flexBetween} flex-col ${styles.card} gap-4`}
   >
-    <div className="w-full flex flex-row justify-between items-center mb-5">
-      <div className="">
-        <p className="font-semibold text-[18px]">{name}.</p>
-        <div className="flex items-end gap-3">
-          <p className="font-semibold text-[12px]">{date && `${date}`}</p>
-          <p className="font-semibold text-[12px]">{city && `г. ${city}`}</p>
+    <div
+      className={`w-full ${styles.flexBetween} flex-col sm:flex-row items-start`}
+    >
+      <div className="w-full sm:w-3/4 flex flex-col items-start">
+        <p className={`${styles.fontCardTitle}`}>{name}.</p>
+        <div className={`${styles.fontNormal} ${styles.flexEnd} gap-3`}>
+          <p>{date && `${date}`}</p>
+          <p>{city && `г. ${city}`}</p>
         </div>
       </div>
-      <div class="my-1 flex flex-col justify-start items-center">
+      <div className="w-full sm:w-1/4 flex flex-col items-start sm:items-end">
         <StarRatings
           rating={rating}
           starRatedColor="#cecf2f"
           starDimension="22px"
           starSpacing="0px"
+          className="w-1/4"
         />
       </div>
     </div>
-    <p className="text-secondary-white text-[14px]">{parse(text)}</p>
+    <p className={`${styles.fontCardNormal} w-full text-justify sm:text-start`}>
+      {parse(text)}
+    </p>
   </motion.div>
 );
 

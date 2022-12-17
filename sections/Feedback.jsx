@@ -7,6 +7,8 @@ import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 import { feedbackGreeting } from "../constants";
 import { FeedbackForm } from "../components";
 
+import { MdFormatQuote } from "react-icons/md";
+
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
     <motion.div
@@ -18,19 +20,19 @@ const Feedback = () => (
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+        className="flex-[0.5] lg:max-w-[420px] flex justify-start flex-col sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
         <div className="feedback-gradient" />
         <div id="feedback">
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
+          <h4 className={`${styles.fontCardTitle} text-white`}>
             {feedbackGreeting.name}
           </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+          <p className={`${styles.fontBold} mt-[8px] text-white`}>
             {feedbackGreeting.position}
           </p>
         </div>
 
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
+        <p className={`${styles.fontCardNormal} mt-[24px] text-white`}>
           “{feedbackGreeting.text}”
         </p>
       </motion.div>
@@ -43,13 +45,9 @@ const Feedback = () => (
 
         <motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden absolute -left-[24%] -top-[2%]"
         >
-          <img
-            src="/stamp.png"
-            alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
-          />
+          <MdFormatQuote className="w-[165px] h-[165px] object-contain fill text-secondary-white opacity-30"/>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
 import { motion } from "framer-motion";
-import { ExploreCard, TitleText, TypingText, SubtitleText } from "../components";
 
+import { ExploreCard, TitleText, SubtitleText } from "../components";
 import { staggerContainer } from "../utils/motion";
 import { exploreWorlds } from "../constants";
 
@@ -22,22 +21,13 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText
-          title="РИТУАЛЬНЫЕ УСЛУГИ"
-          textStyles={`text-center text-[24px]`}
-        />
+        <TitleText title={exploreWorlds.title} textStyles="text-center" />
         <SubtitleText
-          title={
-            <>
-              При организации похорон близкие усопшего
-              <br className="md:block hidden" /> обращаются за такими
-              стандартными ритуальными услугами как:
-            </>
-          }
-          textStyles="text-center"
+          title={exploreWorlds.subtitle}
+          textStyles="pt-4 text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {exploreWorlds.map((world, index) => (
+          {exploreWorlds.cards.map((world, index) => (
             <ExploreCard
               key={world.id}
               {...world}

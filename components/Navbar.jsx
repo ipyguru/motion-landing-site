@@ -14,10 +14,7 @@ const Navbar = () => (
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
   >
-    <div className="absolute w-[50%] inset-0 gradient-01" />
-    <div
-      className={`${styles.innerWidth} flex mx-auto justify-between gap-0 sm:gap-8 items-center`}
-    >
+    <div className={`${styles.innerWidth, styles.flexBetween} gap-0 sm:gap-8`}>
       <PhoneCard divStyles="text-white font-extrabold sm-text-[20px] text-[14px] xl:leading-[30px]" />
       <h2 className="hidden md:block text-white font-extrabold sm:text-[20px] text-[14px] xl:leading-[30px]">
         ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА
@@ -31,6 +28,8 @@ const Navbar = () => (
         icon={<MdOutgoingMail style={{ width: "24px", height: "auto" }} />}
       />
     </div>
+
+    <div className="absolute w-[50%] inset-0 gradient-01" />
   </motion.nav>
 );
 

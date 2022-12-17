@@ -10,14 +10,23 @@ const styles = {
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-start items-start",
+  flexBetween: "flex justify-between items-center",
   flexEnd: "flex justify-end",
   navPadding: "pt-[98px]",
-
+  
+  // text
+  fontTitle: "text-white uppercase font-normal sm:text-[26px] text-[18px] antialiased hover:subpixel-antialiased",
+  fontNormal: "text-secondary-white font-normal text-[16px] sm:text-[18px] antialiased hover:subpixel-antialiased",
+  fontBold: "text-secondary-white font-bold text-[16px] sm:text-[18px] antialiased hover:subpixel-antialiased",
+  // Cards
+  card: "bg-slate-700 text-white rounded-[20px] p-6 hover:shadow-lg shadow-inherit shadow-sm cursor-pointer",
+  fontCardTitle: "text-white uppercase font-normal text-[16px] sm:text[18px] antialiased hover:subpixel-antialiased",
+  fontCardNormal: "text-secondary-white font-normal text-[14px] sm:text-[16px] antialiased hover:subpixel-antialiased",
   // hero section
   heroHeading:
-    "font-bold lg:text-[130px] md:text-[80px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white",
+    "ml-[20px] font-bold lg:text-[130px] md:text-[80px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white",
   heroDText:
-    "md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]",
+    "-ml-[20px] text-primary-blue text-[44px] font-bold leading-[64.4px] uppercase",
   btnSecondary:
     "py-2.5 px-5 cursor-pointer font-normal text-[16px] text-white focus:outline-none bg-white rounded-[32px] border border-gray-200 hover:bg-[#25618B] focus:z-10 focus:ring-4 focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-[#25618B] dark:hover:text-white dark:hover:bg-[#25618B]",
   btnPrimary:
