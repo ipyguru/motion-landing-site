@@ -21,7 +21,8 @@
     "react-icons": "^4.7.1",
     "react-phone-number-input": "^3.2.13",
     "react-star-ratings": "^2.3.0",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
