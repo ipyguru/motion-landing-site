@@ -82,7 +82,7 @@ export const newFeatures = {
 export const contacts = {
   title: "Наши контакты:",
   address: "г. Саратов, ул. Астраханская, д. 103",
-  phone: "+7 (8452) 93-70-70",
+  phone: "+7 (937) 960-70-70",
   email: "gpssar@yandex.ru",
   companyName: "ГОРОДСКАЯ ПОХОРОННАЯ СЛУЖБА",
   domainName: "https://sargps.ru",
