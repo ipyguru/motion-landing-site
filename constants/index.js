@@ -88,6 +88,7 @@ export const contacts = {
   domainName: "https://sargps.ru",
   officialName: "ИП «ЧЕРНЯЕВ ДМИТРИЙ ВЛАДИМИРОВИЧ»",
   ogrn: "321645100047592",
+  inn: "645319691667",
   map: {
     width: "100%",
     height: "544",
