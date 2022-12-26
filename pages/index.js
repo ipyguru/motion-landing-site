@@ -13,6 +13,17 @@ import {
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
+    {/* Yandex Metrika */}
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/91852661"
+          style={{ position: "absolute", left: "-9999px" }}
+          alt=""
+        />
+      </div>
+    </noscript>
+    {/* Yandex Metrika */}
     <Navbar />
     <Hero />
     <About />
