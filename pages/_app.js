@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }) => (
       <meta name="keywords" content={contacts.companyName} />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
-      <meta name="yandex-verification" content="b396e1cf512bf4c2" />
+      <meta name="yandex-verification" content="f4ed041bd23203ff" />
       <link rel="apple-touch-icon" href="/favicon.ico" />
       <link rel="icon" href="/favicon.ico" />
       <script
